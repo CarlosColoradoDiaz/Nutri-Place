@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriPlace</title>
+    <style>
+        *{
+            box-sizing: border-box; /* Mantiene el tamaño total incluyendo padding y border */
+            padding: 0%; /* Elimina relleno por defecto */
+            margin: 0%; /* Elimina márgenes por defecto */
+        }
+
+        body{
+            background-color: white;
+            color:black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            background-color: white;
+            display: flex; /* Distribución flexible horizontal */
+            justify-content: space-around; /* Espacio uniforme entre elementos */
+            align-items: center; /* Centrado vertical */
+        }
+
+        header ul{
+            list-style: none; /* Quita viñetas */
+            display: flex; /* Muestra elementos en fila */
+            padding-left: 800px; /* Espacio a la izquierda (puede ajustarse para responsive) */
+            gap: 20px; /* Espacio entre elementos */
+        }
+
+        header ul li a{
+            color:black;
+            text-decoration: none; /* Sin subrayado */
+            font-weight: bold; /* Negrita */
+        }
+
+        h3{
+            padding-top: 35px;
+        }
+
+        #banner{
+            background-color: #FFF5E1;
+            color: black;
+            display: flex; /* Diseño flexible */
+            flex-direction: column; /* Elementos en columna */
+            align-items: center; /* Centrado horizontal */
+            text-align: center; /* Texto centrado */
+            line-height: 1.5; /* Altura de línea */
+            padding: 50px 20px; /* Espaciado interno */
+        }
+
+        #descripcion{
+            margin-top: 20px; /* Margen superior */
+            padding: 20px; /* Relleno interno */
+        }
+
+        #descripcion h2{
+            text-align: center;
+        }
+
+        #descripcion p {
+            margin-top: 10px; /* Margen superior */
+            line-height: 1.5; /* Interlineado */
+        }
+
+        .eslogan{
+            font-family: 'Pacifico', cursive;
+            font-size: 1.8rem; /* Tamaño grande */
+            text-align: center; /* Centrado */
+            color:green;
+        }
+
+        .logo{
+            border-radius: 8px;
+            width: 160px;
+        }
+
+        #productos-batidos{
+            background-color: #FFF5E1;
+            display: flex; /* Flex para layout */
+            flex-wrap: wrap; /* Permite saltar de línea */
+            justify-content: center; /* Centrado horizontal */
+            gap: 15px; /* Espacio entre elementos */
+            padding: 40px 20px; /* Relleno interno */
+        }
+
+        #productos-batidos{
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #productos-batidos article{
+            background-color: white;
+            text-align: center; /* Texto centrado */
+            border-radius: 8px; /* Bordes redondeados */
+            width: 300px; /* Ancho fijo */
+            padding: 15px; /* Relleno */
+            box-shadow: 0 4px 8px rgba(0,0,0,1); /* Sombra */
+        }
+
+        #productos-batidos img{
+            width: 250px;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+            <figure>
+                <img class="logo" src="img/Logo.png" alt="Logo de NutriPlace">
+            </figure>
+            <ul>
+                <li>
+                    <a href="#Inicio">Inicio</a>
+                </li>
+                <li>
+                    <a href="#Quienes Somos">Quienes somos</a>
+                </li>
+                <li>
+                    <a href="https://wa.me/573222707468" target="_blank">Contacto</a>
+                </li>
+            </ul>
+        </header>
+
+        <main>
+            <section id="banner">
+                <h1>NutriPlace</h1>
+                <p>En NutriPlace sin importar cuál sea tu meta, contamos con los productos nutricionales, herramientas y apoyo que necesitas para conseguirlo y desarrollar hábitos saludables. Nos destacamos por nuestra identidad, misión, menú, promociones y muy buena atención personalizada, posicionándola como tu mejor opción y accesible en Montería. Somos lo mejor en ofrecerte productos nutricionales y estamos para satisfacer tus necesidades de la mejor manera.</p><br>
+                <a href="https://wa.me/573222707468?text=Hola%2C%20estoy%20interesado%20en%20un%20Producto" target="_blank" class="boton">Contáctanos</a>
+            </section>
+
+            <section id="descripcion">
+                <h2><strong>¿Quiénes somos?</strong></h2>
+                <p><strong>En NutriPlace vivimos la nutrición como una experiencia transformadora.</strong> No solo te ofrecemos batidos y productos saludables: te damos un espacio para soñar en grande, alcanzar tus metas y sentirte increíble desde adentro hacia afuera. Somos un club nutricional en el corazón de Montería, donde la energía positiva, la motivación y el bienestar se combinan con ingredientes de alta calidad. <strong>Cada bebida, cada snack, está pensado para alimentar tu cuerpo, inspirar tu mente y elevar tu espíritu.</strong> Creemos que la nutrición es más que una rutina: es un estilo de vida que se disfruta, se comparte y se celebra. Por eso, en NutriPlace te recibimos con sonrisas, te motivamos con resultados y te acompañamos en cada paso de tu camino hacia una mejor versión de ti. <strong>No somos solo un lugar para nutrirte, somos una comunidad donde cada día es una oportunidad para sentirte bien, rodeado de buena vibra y sabor.</strong></p><br>
+                <p class="eslogan"><strong>“NutriPlace: Donde nutrirte sabe bien y se siente mejor.”</strong></p><br>
+            </section>
+
+            <section id="productos-batidos">
+                <article>
+                    <h3>Batido Nutricional Fórmula 1</h3>
+                    <figure>
+                        <img src="img/BatidoCookies&Cream.webp" alt="">
+                    </figure>
+                    <p>Cookies & Cream</p>
+                    <a href="https://wa.me/573222707468?text=Hola%2C%20quiero%20ordenar%20un%20Batido%20Cookies&Cream" target="_blank" class="cta-boton">Ordenar esta</a>
+                </article>
+
+                <article>
+                    <h3>Batido Nutricional Fórmula 1</h3>
+                    <figure>
+                        <img src="img/BatidoVainilla.webp" alt="">
+                    </figure>
+                    <p>Vainilla</p>
+                    <a href="https://wa.me/573222707468?text=Hola%2C%20quiero%20ordenar%20un%20Batido%20de%20Vainilla" target="_blank" class="cta-boton">Ordenar esta</a>
+                </article>
+
+                <article>
+                    <h3>Batido Nutricional Fórmula 1</h3>
+                    <figure>
+                        <img src="img/BatidoDulcedeLeche.webp" alt="">
+                    </figure>
+                    <p>Dulce de leche</p>
+                    <a href="https://wa.me/573222707468?text=Hola%2C%20quiero%20ordenar%20un%20Batido%20Dulce%20de%20Leche" target="_blank" class="cta-boton">Ordenar esta</a>
+                </article>
+
+                <article>
+                    <h3>Batido Nutricional Fórmula 1</h3>
+                    <figure>
+                        <img src="img/BatidoBananoCaramelo.webp" alt="">
+                    </figure>
+                    <p>Banana Caramelo</p>
+                    <a href="https://wa.me/573222707468?text=Hola%2C%20quiero%20ordenar%20un%20Batido%20Banana%20Caramelo" target="_blank" class="cta-boton">Ordenar esta</a>
+                </article>
+
+                <article>
+                    <h3>Batido Nutricional Fórmula 1</h3>
+                    <figure>
+                        <img src="img/BatidoCafeLatte.webp" alt="">
+                    </figure>
+                    <p>Café Latte</p>
+                    <a href="https://wa.me/573222707468?text=Hola%2C%20quiero%20ordenar%20un%20Batido%20de%20Café%20Latte" target="_blank" class="cta-boton">Ordenar esta</a>
+                </article>
+
+                <article>
+                    <h3>Batido Nutricional Fórmula 1</h3>
+                    <figure>
+                        <img src="img/BatidoCanelayEspecias.webp" alt="">
+                    </figure>
+                    <p>Canela y Especias</p>
+                    <a href="https://wa.me/573222707468?text=Hola%2C%20quiero%20ordenar%20un%20Batido%20de%20Canela%20y%20Especias" target="_blank" class="cta-boton">Ordenar esta</a>
+                </article>
+
+                <article>
+                    <h3>Batido Nutricional Fórmula 1</h3>
+                    <figure>
+                        <img src="img/BatidoNaranjaCrema.webp" alt="">
+                    </figure>
+                    <p>Naranja Crema</p>
+                    <a href="https://wa.me/573222707468?text=Hola%2C%20quiero%20ordenar%20un%20Batido%20Naranja%20Crema" target="_blank" class="cta-boton">Ordenar esta</a>
+                </article>
+
+                <article>
+                    <h3>Batido Nutricional Fórmula 1</h3>
+                    <figure>
+                        <img src="img/BatidoChocoavellana.webp" alt="">
+                    </figure>
+                    <p>Chocoavellana</p>
+                    <a href="https://wa.me/573222707468?text=Hola%2C%20quiero%20ordenar%20un%20Batido%20Chocoavellana" target="_blank" class="cta-boton">Ordenar esta</a>
+                </article>
+
+                <article>
+                    <h3>Batido Nutricional Fórmula 1</h3>
+                    <figure>
+                        <img src="img/BatidoFresa.webp" alt="">
+                    </figure>
+                    <p>Fresa</p>
+                    <a href="https://wa.me/573222707468?text=Hola%2C%20quiero%20ordenar%20un%20Batido%20de%20Fresa" target="_blank" class="cta-boton">Ordenar esta</a>
+                </article>
+            </section>
+    </main>
+</body>
+</html>
