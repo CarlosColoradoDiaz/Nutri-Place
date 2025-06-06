@@ -1,231 +1,34 @@
-*{
-    box-sizing: border-box; /* Mantiene el tamaño total incluyendo padding y border */
-    padding: 0%; /* Elimina relleno por defecto */
-    margin: 0%; /* Elimina márgenes por defecto */
+.c1{
+    background-color: brown;
+    width: 300px;
+    height: 100px;
 }
 
-html {
-    scroll-behavior: smooth; /* Desplazamiento de los enlaces suaves */
+.c2{
+    background-color:green;
+    width: 300px;
+    height: 100px;
+    color: aliceblue;
+    margin-top: 10px;
+    padding: 30px
 }
 
-body{
-    background-color: #CFF4D2;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+.inline-block1{
+    display:inline-block;
+    background-color:pink;
+    width: 300px;
+    height: 300px;
+    color: aliceblue;
+    margin-top: 10px;
+    padding: 80px;
 }
 
-header h2{
-    padding-right: 280px;
-}
-
-header{
-    background-color: #ffffff;
-    display: flex; /* Distribución flexible horizontal */
-    justify-content: space-evenly;
-    padding: 50px 0px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    font-size: clamp(20px, 5px, 3rem);
-}
-
-header ul{
-    list-style: none; /* Quita viñetas */
-    display: flex; /* Muestra elementos en fila */
-    gap: 25px; /* Espacio entre elementos */
-}
-
-header ul li a{
-    color: #388e3c;
-    text-decoration: none; /* Sin subrayado */
-    font-weight: bold; /* Negrita */
-}
-
-header ul li a:hover {
-    color: #2e7d32;
-    transform: scale(1.1);
-    display: inline-block;
-}
-
-h2{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-h5{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #2e7d32;
-}
-
-#inicio{
-    background-color: #ffffff;
-    color: black;
-    display: flex; /* Diseño flexible */
-    flex-direction: column; /* Elementos en columna */
-    align-items: center; /* Centrado horizontal */
-    text-align: center; /* Texto centrado */
-    line-height: 1.5; /* Altura de línea */
-    padding: 50px 20px; /* Espaciado interno */
-    margin: 40px auto;
-    max-width: 1310px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-}
-
-#quienessomos{
-    background-color: #ffffff;
-    margin: 30px auto;
-    max-width: 1310px;
-    border-radius: 8px;
-    padding: 30px; /* Relleno interno */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-}
-
-#quienessomos p {
-    margin-top: 10px; /* Margen superior */
-    line-height: 1.5; /* Interlineado */
-}
-
-.eslogan{
-    padding: 20px 20px;
-    font-style: italic;
-    font-size: 1.8rem; /* Tamaño grande */
-    text-align: center; /* Centrado */
-    color:green;
-}
-
-.destacado{
-    color: #388e3c;
-}
-
-.boton, .cta-boton{
-    background-color: #66bb6a;
-    color: white;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.9);
-}
-
-.boton:hover, .cta-boton:hover{
-    background-color: #4caf50;
-    transform: scale(1.1);
-    display: inline-block;
-}
-
-.carousel-caption{
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    color: #2d2d2d;
-    border-radius: 10px;
-}
-
-.carousel-caption{
-    bottom: 1px;
-}
-
-.carousel-inner{
-    padding: 40px;
-}
-
-.carousel-item img{
-    max-height: 450px;
-    width: auto;
-    margin: 0 auto;
-    object-fit: contain;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon{
-    filter: brightness(0) saturate(100%) invert(15%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%);
-}
-
-.carousel-indicators button{
-    background-color: #666 !important;
-    opacity: 0.7;
-}
-
-.carousel-indicators .active{
-    background-color: black !important;
-    opacity: 1;
-}
-
-/* Frase motivacional */
-#frasemotivacional {
-    background-color: #e0f7fa;
-    padding: 30px;
-    margin: 20px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-#frasemotivacional h2 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-#frasemotivacional p {
-    font-style: italic;
-    font-size: 1.0rem;
-    color: #00796b;
-}
-
-/* Formulario de contacto */
-#contacto {
-    background-color: #f2f2f2;
-    padding: 40px 20px;
-}
-
-#contacto h2 {
-    text-align: center;
-    gap: 20px;
-}
-
-#contacto form {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-#contacto input,
-#contacto textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-    width: 100%;
-}
-
-#contacto button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 12px;
-    font-size: 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#contacto button:hover {
-    background-color: #45a049;
-}
-
-#email, #mensaje, #nombre{
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-#email:focus, #mensaje:focus, #nombre:focus{
-    outline: none;
-    border-color: transparent;
-    box-shadow: 0 0 0 2px #CFF4D2, 0 0 20px #CFF4D2;
-    transform: translateY(-2px);
+.inline-block2{
+    display:inline-block;
+    background-color:blue;
+    width: 300px;
+    height: 200px;
+    color: aliceblue;
+    margin-top: 10px;
+    padding: 50px;
 }
